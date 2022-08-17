@@ -26,10 +26,10 @@
                 orientation: 'horizontal'
                 Button:
                     text: "MODBUS"
-                    on_release: root._modbusPopup.open()
+                    # on_release: root._modbusPopup.open()
                 Button:
                     text: "Scan Time"
-                    on_release: root._scanPopup.open()
+                    # on_release: root._scanPopup.open()
         Image:
             id: img_con
             size_hint_x: None
@@ -53,10 +53,10 @@
             pos_hint: {'x':0.005,'y':0.44}
         Button:
             size_hint: (None,None)
-            size: (0.4*133,0.4*134)
-            pos_hint: {'x':0.1,'y':0.50}
-            background_normal: 'imgs/off1.png'
-            background_down: 'imgs/on1.png'
+            size: (0.4*154,0.4*79)
+            pos_hint: {'x':0.12,'y':0.52}
+            background_normal: 'imgs/off.png'
+            background_down: 'imgs/on.png'
             # on_release:
             #     root._graph.open()
         Image:
@@ -67,10 +67,10 @@
             pos_hint: {'x':0.005,'y':0.29}
         Button:
             size_hint: (None,None)
-            size: (0.4*133,0.4*134)
-            pos_hint: {'x':0.1,'y':0.35}
-            background_normal: 'imgs/off1.png'
-            background_down: 'imgs/on1.png'
+            size: (0.4*154,0.4*79)
+            pos_hint: {'x':0.12,'y':0.37}
+            background_normal: 'imgs/off.png'
+            background_down: 'imgs/on.png'
             # on_release:
             #     root._graph.open()
         Image:
@@ -81,10 +81,10 @@
             pos_hint: {'x':0.005,'y':0.14}
         Button:
             size_hint: (None,None)
-            size: (0.4*133,0.4*134)
-            pos_hint: {'x':0.1,'y':0.20}
-            background_normal: 'imgs/off1.png'
-            background_down: 'imgs/on1.png'
+            size: (0.4*154,0.4*79)
+            pos_hint: {'x':0.12,'y':0.22}
+            background_normal: 'imgs/off.png'
+            background_down: 'imgs/on.png'
             # on_release:
             #     root._graph.open()
         Label:
@@ -112,10 +112,10 @@
         Button:
             id: bombaButton
             size_hint: (None,None)
-            size: (0.4*133,0.4*134)
-            background_normal: 'imgs/off1.png'
-            background_down: 'imgs/on1.png'
-            pos_hint: {'x':0.92,'y':0.72}
+            size: (0.4*154,0.4*79)
+            background_normal: 'imgs/off.png'
+            background_down: 'imgs/on.png'
+            pos_hint: {'x':0.9,'y':0.74}
             # on_release:
             #     root._graph.open()
         Button:
@@ -130,10 +130,3 @@
             size_hint: (0.2,0.05)
             # on_release:
             #     root._hgraph.open()
-
-# <TempLabel@Label>:
-#     text: '-.- ºC'
-#     font_size: 20
-#     bold: True
-#     halign: 'center'
-#     color: 0, 0, 0, 1
